@@ -1027,12 +1027,12 @@ public class Utils : GLib.Object {
 //          item_02.content = _("Beautiful and easy to use tasks");
 //          item_02.note = _("");
 
-//          var item_03 = new Objects.Item ();
-//          item_03.id = generate_id ();
-//          item_03.project_id = project.id;
-//          item_03.content = _("Due dates");
-//          item_03.note = _("""- If you know you need to have the task done on a certain day, click on the calendar icon and select a date.
-//  - If you want to delete the due date, repeat the process and select the "undate" option.""");
+          var item_03 = new Objects.Item ();
+          item_03.id = generate_id ();
+          item_03.project_id = project.id;
+          item_03.content = _("Due dates");
+          item_03.note = _("""- If you know you need to have the task done on a certain day, click on the calendar icon and select a date.
+  - If you want to delete the due date, repeat the process and select the "undate" option.""");
 
 //          var item_04 = new Objects.Item ();
 //          item_04.id = generate_id ();
@@ -1063,7 +1063,7 @@ public class Utils : GLib.Object {
         Planner.database.insert_project (project);
         Planner.database.insert_item (item_01);
         // Planner.database.insert_item (item_02);
-        // Planner.database.insert_item (item_03);
+        Planner.database.insert_item (item_03);
         // Planner.database.insert_item (item_04);
         // Planner.database.insert_section (section);
         // Planner.database.insert_item (item_05);
